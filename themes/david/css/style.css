@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(239, 239, 157);
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1 0 auto;
+    padding: 1em;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+
+.header, .site-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Title */
+
+.title {
+    padding: 3em 3em 3em 0;
+}
+
+.logo {
+    padding: 3em 3em 3em 0;
+    width: 200px;
+}
+
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.title * {
+    color: #111;
+}
+
+.title p {
+    font-style: italic;
+}
+
+/* pictures */
+
+.me {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+
+}
+
+.footer a {
+    color: rgb(239, 239, 157);
+}
+
+.footer a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+} 
+
+.footer .social {
+    font-size: 2rem;
+}
+
+/* Typografy */
+
+body {
+    font-family: cursive;
+    line-height: 1.5rem;
+    color: black;
+}
+
+p, li, dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+table {
+    border: 1px solid
+}
+
+th {
+    background: rgb(161, 160, 160);
+    border: 1px solid;
+}
+
+td {
+    background: rgb(193, 171, 171);
+    border: 1px solid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
