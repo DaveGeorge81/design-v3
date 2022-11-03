@@ -47,6 +47,14 @@ body {
     justify-content: space-evenly;
 }
 
+.flash-region {
+    display: flex;
+    justify-content: center;
+}
+
+.flash-img {
+    max-width: 800px;
+}
 /* Title */
 
 .title {
