@@ -1,0 +1,113 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+
+@import 'blockquotes';
+@import 'code';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu&display=swap');
+
+
+
+// mixin
+@mixin display-flex {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+// all
+body {
+    min-height: 100vh;
+    background-color: $background-color;
+    background-image: $background;
+    padding: 1em;
+
+    .me {
+        width: 300px;
+        margin: auto;
+        display: block;
+    }
+
+    .flash-img {
+        max-width: 500px;
+    }
+
+    .flash-region {
+        @include display-flex;
+    }
+}
+
+* {
+    color: $font-color;
+    font-family: 'Roboto Slab', serif;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid;
+}
+
+// header
+.logo {
+    @include display-flex;
+    width: 200px;
+    padding-top: 1em;
+    flex-direction: row-reverse;
+}
+
+.title {
+    padding-right: 2em;
+}
+
+
+//main
+.main {
+    max-width: 800px;
+    margin: auto;
+}
+
+//footer
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: none;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
