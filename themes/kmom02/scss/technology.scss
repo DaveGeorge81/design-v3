@@ -1,0 +1,178 @@
+.landingpage {
+    display: grid;
+    grid-template-columns: 12em 12em 12em;
+    grid-template-rows: 6em 12em 12em 12em 12em;
+    justify-content: center;
+    gap: 1em 1em;
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        grid-column: 1 / 4;
+        grid-row: 1 / 1;
+        :hover {
+            box-shadow: none;
+        }
+    }
+
+    h2 {
+        margin: 0;
+        top: 0;
+        left: 0;
+        text-align: left;
+        position: absolute;
+        width: 100%;
+    }
+    .boxes {
+        border: 1px solid black;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+    }
+    .boxes:hover {
+        box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.474);
+        }
+
+    .technology-CSS {
+        h2 {
+            background-color: #4e8aa985;
+        }
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+
+    .technology-HTML {
+        h2 {
+            background-color: #db15cc2e;
+        }
+        grid-column: 2 / 4;
+        grid-row: 2 / 2;
+    }
+
+    .technology-javascript {
+        h2 {
+            background-color: #ed9d32b5;
+        }
+        grid-column: 1 / 3;
+        grid-row: 3 / 3;
+    }
+
+    .technology-PHP {
+        h2 {
+            background-color: #faebd7b8;
+        }
+        grid-column: 3 / 4;
+        grid-row: 3 / 3;
+    }
+
+    .technology-python {
+        h2 {
+            background-color: #e68224a6;
+        }
+        grid-column: 1 / 4;
+        grid-row: 4 / 4;
+    }
+
+    .technology-git {
+        h2 {
+            background-color: #667f7f91;
+        }
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+    }
+
+    .technology-SQL {
+        h2 {
+            background-color: #78c67f99;
+        }
+        grid-column: 2 / 4;
+        grid-row: 5 / 5;
+    }
+
+    .side-bar {
+        grid-column: 1 / 1;
+    }
+
+    .main {
+        grid-column: 2 / 4;
+    }
+}
+
+@media (max-width: 767px) {
+    .landingpage {
+        grid-template-columns: 20em;
+        grid-template-rows: 5em;
+        margin-left: 1em;
+
+        h1 {
+            margin-right: 1em;
+        }
+
+
+        .technology-CSS {
+            h2 {
+                background-color: #4e8aa985;
+            }
+            grid-column: 1 / 1;
+            grid-row: 2 / 2;
+        }
+
+        .technology-HTML {
+            h2 {
+                background-color: #db15cc2e;
+            }
+            grid-column: 1 / 1;
+            grid-row: 3 / 3;
+        }
+
+        .technology-javascript {
+            h2 {
+                background-color: #ed9d32b5;
+            }
+            grid-column: 1 / 1;
+            grid-row: 4 / 4;
+        }
+
+        .technology-PHP {
+            h2 {
+                background-color: #faebd7b8;
+            }
+            grid-column: 1 / 1;
+            grid-row: 5 / 5;
+        }
+
+        .technology-python {
+            h2 {
+                background-color: #e68224a6;
+            }
+            grid-column: 1 / 1;
+            grid-row: 6 / 6;
+        }
+
+        .technology-git {
+            h2 {
+                background-color: #667f7f91;
+            }
+            grid-column: 1 / 1;
+            grid-row: 7 / 7;
+        }
+
+        .technology-SQL {
+            h2 {
+                background-color: #78c67f99;
+            }
+            grid-column: 1 / 1;
+            grid-row: 8 / 8;
+        }
+
+        .side-bar {
+            display: none;
+        }
+
+        .main {
+            grid-column: 1 / 2;
+        }
+    }
+}

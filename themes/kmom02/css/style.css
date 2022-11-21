@@ -6457,6 +6457,161 @@ pre code {
   line-height: 1.4;
 }
 
+.landingpage {
+  display: grid;
+  grid-template-columns: 12em 12em 12em;
+  grid-template-rows: 6em 12em 12em 12em 12em;
+  justify-content: center;
+  gap: 1em 1em;
+}
+.landingpage img {
+  width: 100%;
+}
+.landingpage h1 {
+  grid-column: 1/4;
+  grid-row: 1/1;
+}
+.landingpage h1 :hover {
+  box-shadow: none;
+}
+.landingpage h2 {
+  margin: 0;
+  top: 0;
+  left: 0;
+  text-align: left;
+  position: absolute;
+  width: 100%;
+}
+.landingpage .boxes {
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+.landingpage .boxes:hover {
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.474);
+}
+.landingpage .technology-CSS {
+  grid-column: 1/1;
+  grid-row: 2/2;
+}
+.landingpage .technology-CSS h2 {
+  background-color: rgba(78, 138, 169, 0.5215686275);
+}
+.landingpage .technology-HTML {
+  grid-column: 2/4;
+  grid-row: 2/2;
+}
+.landingpage .technology-HTML h2 {
+  background-color: rgba(219, 21, 204, 0.1803921569);
+}
+.landingpage .technology-javascript {
+  grid-column: 1/3;
+  grid-row: 3/3;
+}
+.landingpage .technology-javascript h2 {
+  background-color: rgba(237, 157, 50, 0.7098039216);
+}
+.landingpage .technology-PHP {
+  grid-column: 3/4;
+  grid-row: 3/3;
+}
+.landingpage .technology-PHP h2 {
+  background-color: rgba(250, 235, 215, 0.7215686275);
+}
+.landingpage .technology-python {
+  grid-column: 1/4;
+  grid-row: 4/4;
+}
+.landingpage .technology-python h2 {
+  background-color: rgba(230, 130, 36, 0.6509803922);
+}
+.landingpage .technology-git {
+  grid-column: 1/1;
+  grid-row: 5/5;
+}
+.landingpage .technology-git h2 {
+  background-color: rgba(102, 127, 127, 0.568627451);
+}
+.landingpage .technology-SQL {
+  grid-column: 2/4;
+  grid-row: 5/5;
+}
+.landingpage .technology-SQL h2 {
+  background-color: rgba(120, 198, 127, 0.6);
+}
+.landingpage .side-bar {
+  grid-column: 1/1;
+}
+.landingpage .main {
+  grid-column: 2/4;
+}
+
+@media (max-width: 767px) {
+  .landingpage {
+    grid-template-columns: 20em;
+    grid-template-rows: 5em;
+    margin-left: 1em;
+  }
+  .landingpage h1 {
+    margin-right: 1em;
+  }
+  .landingpage .technology-CSS {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+  .landingpage .technology-CSS h2 {
+    background-color: rgba(78, 138, 169, 0.5215686275);
+  }
+  .landingpage .technology-HTML {
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+  .landingpage .technology-HTML h2 {
+    background-color: rgba(219, 21, 204, 0.1803921569);
+  }
+  .landingpage .technology-javascript {
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+  .landingpage .technology-javascript h2 {
+    background-color: rgba(237, 157, 50, 0.7098039216);
+  }
+  .landingpage .technology-PHP {
+    grid-column: 1/1;
+    grid-row: 5/5;
+  }
+  .landingpage .technology-PHP h2 {
+    background-color: rgba(250, 235, 215, 0.7215686275);
+  }
+  .landingpage .technology-python {
+    grid-column: 1/1;
+    grid-row: 6/6;
+  }
+  .landingpage .technology-python h2 {
+    background-color: rgba(230, 130, 36, 0.6509803922);
+  }
+  .landingpage .technology-git {
+    grid-column: 1/1;
+    grid-row: 7/7;
+  }
+  .landingpage .technology-git h2 {
+    background-color: rgba(102, 127, 127, 0.568627451);
+  }
+  .landingpage .technology-SQL {
+    grid-column: 1/1;
+    grid-row: 8/8;
+  }
+  .landingpage .technology-SQL h2 {
+    background-color: rgba(120, 198, 127, 0.6);
+  }
+  .landingpage .side-bar {
+    display: none;
+  }
+  .landingpage .main {
+    grid-column: 1/2;
+  }
+}
 body {
   min-height: 100vh;
   background-color: #3d806b;
@@ -6503,7 +6658,7 @@ th {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 200px;
+  width: 120px;
   padding-top: 1em;
   flex-direction: row-reverse;
 }
