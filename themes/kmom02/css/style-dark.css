@@ -6614,17 +6614,26 @@ pre code {
     grid-column: 1/2;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .me,
+  .flash-img {
+    filter: brightness(0.8) contrast(1.2);
+  }
+  .logo {
+    filter: brightness(0.9);
+  }
+}
 body {
   min-height: 100vh;
   background-color: #3d806b;
-  background-image: linear-gradient(to bottom, #69db5a, #378f2c);
+  background-image: linear-gradient(to bottom, #161a33, #332c16);
   padding: 1em;
 }
 body .me {
   width: 300px;
   margin: auto;
   display: block;
-  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.474);
+  box-shadow: 0 0 15px 10px rgba(30, 29, 29, 0.474);
 }
 body .flash-img {
   max-width: 500px;
@@ -6636,8 +6645,8 @@ body .flash-region {
 }
 
 * {
-  color: #42072f;
-  font-family: "Roboto Slab", serif;
+  color: #80691d;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.25;
 }
 
@@ -6672,7 +6681,7 @@ th {
 }
 
 .nav {
-  color: #42072f;
+  color: #80691d;
 }
 
 .main {

@@ -16,7 +16,16 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'technology';
 
 
+@media (prefers-color-scheme: dark) {
+    .me,
+    .flash-img {
+        filter: brightness(0.8) contrast(1.2);
+    }
 
+    .logo {
+        filter: brightness(0.9);
+    }
+}
 // mixin
 @mixin display-flex {
     display: flex;
@@ -29,14 +38,14 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 body {
     min-height: 100vh;
     background-color: $background-color;
-    background-image: $background;
+    background-image: $background-dark;
     padding: 1em;
 
     .me {
         width: 300px;
         margin: auto;
         display: block;
-        box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.474);
+        box-shadow: 0 0 15px 10px rgba(30, 29, 29, 0.474);
     }
 
     .flash-img {
@@ -49,9 +58,10 @@ body {
 }
 
 * {
-    color: $font-color;
-    font-family: 'Roboto Slab', serif;
+    color: $font-alternative-color;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.25;
+    
 
 
 }
@@ -86,8 +96,9 @@ th {
 }
 
 .nav {
-    color: $nav-color;
+    color: $nav-color-dark;
 }
+
 
 //main
 .main {
