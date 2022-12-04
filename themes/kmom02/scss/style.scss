@@ -14,6 +14,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'report';
 @import 'technology';
+@import 'gallery';
 
 
 
@@ -119,4 +120,8 @@ th {
 
 .hidden {
     display: none !important;
+}
+
+.sheet iframe {
+    width: 100%;
 }

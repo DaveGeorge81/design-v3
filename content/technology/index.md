@@ -28,7 +28,7 @@ Technologies
 
 <div class="boxes technology-python">
 <h2>Python</h2>
-<a href="%base_url%?technology/python"><img src="image/python.jpg"></a>
+<a href="%base_url%?technology/python"><img src="image/python.jpg?q=50"></a>
 </div>
 
 <div class="boxes technology-git">

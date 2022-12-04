@@ -14,6 +14,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'report';
 @import 'technology';
+@import 'gallery';
 
 
 @media (prefers-color-scheme: dark) {
@@ -130,4 +131,8 @@ th {
 
 .hidden {
     display: none !important;
+}
+
+.sheet iframe {
+    width: 100%;
 }
