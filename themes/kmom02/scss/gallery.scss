@@ -1,11 +1,10 @@
 .gallery {
-    
     .grid {
-    display: grid;
-    grid-template-columns: 15em 15em 15em;
-    grid-template-rows: 1em 20em 20em;
-    justify-content: center;
-    gap: 1em 1em;
+        display: grid;
+        grid-template-columns: 15em 15em 15em;
+        grid-template-rows: 1em 20em 20em;
+        justify-content: center;
+        gap: 1em 1em;
     }
 
     img {
@@ -18,8 +17,9 @@
     }
 
     .boxes {
-        border: 1px solid black;
+        border: 1px solid #000;
         overflow: hidden;
+        box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.474);
     }
 
     .photo1 {
@@ -77,13 +77,12 @@
 
 @media (max-width: 767px) {
     .gallery {
-
         .grid {
-        display: grid;
-        grid-template-columns: 20em;
-        grid-template-rows: 5em;
-        justify-content: center;
-        gap: 1em 1em;
+            display: grid;
+            grid-template-columns: 20em;
+            grid-template-rows: 5em;
+            justify-content: center;
+            gap: 1em 1em;
         }
     
         img {
@@ -96,7 +95,7 @@
         }
     
         .boxes {
-            border: 1px solid black;
+            border: 1px solid #000;
             overflow: hidden;
         }
     

@@ -67,6 +67,10 @@ body {
 
 }
 
+h1 {
+    border-bottom: 1px solid $font-alternative-color;
+}
+
 h1,
 h2,
 h3,
@@ -87,13 +91,13 @@ th {
 // header
 .logo {
     @include display-flex;
-    width: 120px;
-    padding-top: 1em;
-    flex-direction: row-reverse;
+    width: 135px;
+    justify-content: unset;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.474);
 }
 
 .title {
-    padding-right: 2em;
+    margin-left: 10px;
 }
 
 .nav {
@@ -116,6 +120,7 @@ th {
     align-items: center;
     position: relative;
     bottom: 0;
+    border-top: 3px solid $font-alternative-color;
 
     a:link,
     a:visited,

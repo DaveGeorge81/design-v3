@@ -50,5 +50,5 @@ Gallery
 </div>
 </div>
 <div class="embed-container">
-    <iframe src="https://www.youtube.com/embed/pJCxcdWqdto" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/pJCxcdWqdto" frameborder="0" allowfullscreen title="nanowar"></iframe>
 </div>

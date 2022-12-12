@@ -1,5 +1,5 @@
 ---
-Logo: image/me3.jpg
+Logo: image/me3.jpg?w=300&q=80
 Tagline: My portfolio.
 Flash: image/checkered2.png
 Social:

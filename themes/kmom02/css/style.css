@@ -6629,8 +6629,9 @@ pre code {
   grid-row: 1/1;
 }
 .gallery .boxes {
-  border: 1px solid black;
+  border: 1px solid #000;
   overflow: hidden;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.474);
 }
 .gallery .photo1 {
   grid-column: 1/1;
@@ -6690,7 +6691,7 @@ pre code {
     grid-row: 1/1;
   }
   .gallery .boxes {
-    border: 1px solid black;
+    border: 1px solid #000;
     overflow: hidden;
   }
   .gallery .photo1 {
@@ -6745,6 +6746,10 @@ body .flash-region {
   line-height: 1.25;
 }
 
+h1 {
+  border-bottom: 1px solid #42072f;
+}
+
 h1,
 h2,
 h3,
@@ -6766,13 +6771,13 @@ th {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 120px;
-  padding-top: 1em;
-  flex-direction: row-reverse;
+  width: 135px;
+  justify-content: unset;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.474);
 }
 
 .title {
-  padding-right: 2em;
+  margin-left: 10px;
 }
 
 .nav {
@@ -6791,6 +6796,7 @@ th {
   align-items: center;
   position: relative;
   bottom: 0;
+  border-top: 3px solid #42072f;
 }
 .footer a:link,
 .footer a:visited,
